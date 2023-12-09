@@ -1,0 +1,86 @@
+/* Body and html */
+body {
+    background: var(--tone9);
+    font-family: Lato-Regular, sans-serif;
+    width: 100vw;
+}
+
+/* Root variables*/
+:root {
+    --tone9:#000712;
+    --tone8:#001234;
+    --tone7:#20304d;
+    --tone6:#404d67;
+    --tone5:#606b80;
+    --tone4:#80899a;
+    --tone3:#9fa6b3;
+    --tone2:#bfc4cc;
+    --tone1:#dfe1e6;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Lato-Black;
+    src: url(Lato/Lato-Black.ttf);
+ }
+
+ @font-face {
+    font-family: Lato-Black;
+    src: url(Lato/Lato-Black.ttf);
+ }
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(Lato/Lato-Regular.ttf);
+ }
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(Lato/Lato-Light.ttf);
+ }
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url(Lato/Lato-Thin.ttf);
+ }
+
+/* Loading welcome screen CSS */
+.splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--tone9);
+    z-index: 200;
+    color: var(--tone1);
+    text-align: center;
+    line-height: 90vh;
+    font-size: 700%;
+}
+
+.splashScreen.displayNone {
+    background: transparent;
+    line-height: 10vh;
+    transition: all ease 1s;
+    left: 0%;
+    width: 100%;
+    font-size: 500%;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+/* Navigation bar */
+.navBar {
+
+}
