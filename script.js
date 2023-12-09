@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 
 document.addEventListener('DOMContentLoaded', (e)=>{
     setTimeout(()=>{
-        ryo.classList.add('moveRight')
+        ryo.classList.add('moveLeft')
     }, 2800);
 })

@@ -15,11 +15,6 @@ table {
     align-items: center;
 }
 
-img:hover {
-    transform: scale(105%);
-    transition: all ease-in-out 300ms;
-}
-
 /* Root variables*/
 :root {
     --tone9:#000712;
@@ -86,7 +81,7 @@ img:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 60vw;
+    width: 55vw;
     height: 100vh;
     background: 0;
     z-index: 200;
@@ -96,13 +91,13 @@ img:hover {
     font-size: 800%;
 }
 
-.ryo.moveRight {
-    width: 100vw;
+.ryo.moveLeft {
     line-height: 10vh;
+    width: 0;
     height: 0vh;
     font-size: 450%;
-    transition: all ease 500ms;
-    left: -1%;
+    left: 1%;
+    transition: line-height ease 1000ms, width ease 1650ms, font-size ease 500ms;
 }
 
 @keyframes fadeIn{
@@ -120,15 +115,16 @@ img:hover {
 ul {
     margin-top: 0;
     list-style-type: none;
-    margin-left: 0;
     padding: 0;
+    padding-left: 10vw;
     overflow: hidden;
     background-color: var(--tone7);
     line-height: 10vh;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    text-align: center;
+    width: 100%;
+    margin:0 auto;
 }
 
 li {
@@ -139,8 +135,9 @@ li a {
     display: block;
     color: var(--tone1);
     text-align: center;
-    padding: 14px 28px;
+    padding: 14px;
     text-decoration: none;
+    width: 70px;
 }
 
 li a:hover:not(.active) {
@@ -152,4 +149,5 @@ li a:hover:not(.active) {
 li a.active {
     color: white;
     background-color: var(--tone5);
+    /* font-size: 110%; */
 }
