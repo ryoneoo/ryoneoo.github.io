@@ -1,8 +1,23 @@
 /* Body and html */
 body {
-    background: var(--tone9);
+    background: var(--tone8);
     font-family: Lato-Regular, sans-serif;
     width: 100vw;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+/* Placeholder */
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img:hover {
+    transform: scale(105%);
+    transition: all ease-in-out 300ms;
 }
 
 /* Root variables*/
@@ -54,9 +69,8 @@ body {
     background: var(--tone9);
     z-index: 200;
     color: var(--tone1);
-    text-align: center;
+    text-align: right;
     line-height: 90vh;
-    font-size: 700%;
 }
 
 .splashScreen.displayNone {
@@ -65,7 +79,30 @@ body {
     transition: all ease 1s;
     left: 0%;
     width: 100%;
-    font-size: 500%;
+    z-index: -10;
+}
+
+.ryo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60vw;
+    height: 100vh;
+    background: 0;
+    z-index: 200;
+    color: var(--tone1);
+    text-align: right;
+    line-height: 90vh;
+    font-size: 800%;
+}
+
+.ryo.moveRight {
+    width: 100vw;
+    line-height: 10vh;
+    height: 0vh;
+    font-size: 450%;
+    transition: all ease 500ms;
+    left: -1%;
 }
 
 @keyframes fadeIn{
@@ -79,8 +116,40 @@ body {
     animation: fadeIn 1s ease-in forwards;
 }
 
-
 /* Navigation bar */
-.navBar {
+ul {
+    margin-top: 0;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--tone7);
+    line-height: 10vh;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--tone1);
+    text-align: center;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: var(--tone7);
+    background-color: var(--tone3);
+    transition: all ease 300ms;
+}
+
+li a.active {
+    color: white;
+    background-color: var(--tone5);
 }

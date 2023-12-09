@@ -7,3 +7,9 @@ document.addEventListener('DOMContentLoaded', (e)=>{
         splash.classList.add('displayNone')
     }, 3000);
 })
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+        ryo.classList.add('moveRight')
+    }, 2800);
+})
