@@ -13,6 +13,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* text-align: center; */
 }
 
 /* Root variables*/
@@ -41,7 +42,7 @@ table {
 
 @font-face {
     font-family: Lato-Regular;
-    src: url(Lato/Lato-Regular.ttf);
+    src: url(Raleway/Raleway-VariableFont_wght.ttf);
  }
 
 @font-face {
@@ -92,6 +93,7 @@ table {
 }
 
 .ryo.moveLeft {
+    position: sticky;
     line-height: 10vh;
     width: 0;
     height: 0vh;
@@ -150,4 +152,34 @@ li a.active {
     color: white;
     background-color: var(--tone5);
     /* font-size: 110%; */
+}
+
+/* Home page */
+.pageHeading {
+    margin-bottom: 100px;
+    color: var(--tone1);
+}
+
+.pages {
+    --pagesHeight: 250px;
+    color: var(--tone1);
+    width: 90%;
+    height: var(--pagesHeight);
+    line-height: var(--pagesHeight);
+    background: var(--tone6);
+    position: inherit;
+    /* display: block; */
+    margin: auto auto;
+    border: var(--tone1) solid 2px;
+    box-shadow: 0 0 5px 1px var(--tone2);
+    border-radius: 10px;
+    transition: all 250ms ease-in-out;
+    margin-bottom: 50px;
+}
+
+.pages:hover {
+    cursor: pointer;
+    transform: scale(103%);
+    box-shadow: 0 0 20px 2px var(--tone2);
+    border: var(--tone1) solid 4px;
 }
