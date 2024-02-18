@@ -6,7 +6,7 @@
 <title>Myanglish Translator Beta</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: Lato-Regular, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,6 +19,12 @@
         margin-left: 0;
         text-align: center;
     }
+    .heading {
+        margin-top: -30%;
+        color: white;
+        position: absolute;
+    }
+
     .container {
         margin: 20px;
         transform: scale(130%);
@@ -35,9 +41,40 @@
     #output {
         margin-left: 10px;
     }
+
+    /* Fonts */
+@font-face {
+    font-family: Lato-Black;
+    src: url(Lato/Lato-Black.ttf);
+ }
+
+ @font-face {
+    font-family: Lato-Black;
+    src: url(Lato/Lato-Black.ttf);
+ }
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+ }
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(Lato/Lato-Light.ttf);
+ }
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url(Lato/Lato-Thin.ttf);
+ }
 </style>
 </head>
 <body>
+
+<div class="heading">
+    Myanglish to Burmese Translator<br>
+    (beta)
+</div>
 
 <div class="container">
     <input type="text" id="textInput" oninput="showOutput()">
