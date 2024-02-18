@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Value App</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #001234;
+        font-family: Lato-Regular, sans-serif;
+        width: 100vw;
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .container {
+        margin: 20px;
+        transform: scale(130%);
+    }
+    input[type="text"],
+    #output {
+        padding: 15px;
+        width: 300px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: white;
+    }
+    #output {
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <input type="text" id="textInput" oninput="showOutput()">
+    <span id="output"></span>
+</div>
+
+<script src="mappings.js"></script>
+<script src="translate.js"></script>
+
+</body>
+</html>
