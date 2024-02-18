@@ -1,8 +1,6 @@
 const textToValue = {
-    'ka':'က',
     'kyr': 'ကြာ',
     'kyarr': 'ကျား',
-    'ko': 'ကို',
     'kyar': 'ကြာ',
     'kwr': 'ကွာ',
     'kyi': 'ကြည့်',
@@ -131,6 +129,8 @@ const textToValue = {
     'ayy': 'အေး',
     'ay': 'အေ',
 
+    'ka':'က',
+    'ko': 'ကို',
     'ga': 'ဂ',
     'ya': 'ရ',
     'ma': 'မ',
