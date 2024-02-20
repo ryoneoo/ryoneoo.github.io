@@ -29,6 +29,7 @@ const textToValue = {
     'aung': 'အောင်',
     'hyg': 'ဟယောင်',
 
+    'nya': 'ည',
     'nyrr': 'ညား',
     'nyr': 'ညာ',
     'nyarr': 'ညား',
@@ -199,5 +200,6 @@ const textToValue = {
     'p': 'ပီ',
     'm': 'မ',
     's': 'စောက်',
+    'x': 'အိပ်',
     'a': 'အ'
 }
