@@ -48,12 +48,18 @@ const textToValue = {
     'larr': 'လား',
     'lar': 'လာ',
     'lol': 'လို',
+    'loe': 'လိုး',
+    'luuu': 'လူး',
+    'luu': 'လူ',
+    'lu': 'လု',
     'lo': 'လို့',
     'lyy': 'လေး',
     'layy': 'လေး',
     'lay': 'လေ',
     'ly': 'လေ',
 
+    'ngrr': 'ငါး',
+    'ngarr': 'ငါး',
     'ngr': 'ငါ',
     'ngar': 'ငါ',
 
@@ -69,6 +75,13 @@ const textToValue = {
     'nw': 'နော',
     'naw': 'နော',
     'nor': 'နော',
+    'neee': 'နီး',
+    'nee': 'နီ',
+    'nl': 'နဲ',
+    'nk': 'နဲ့',
+    'nel': 'နည်း',
+    'nae': 'နည်း',
+    'nal': 'နည်း',
 
     'yayy': 'ရေး',
     'yay': 'ရေ',
@@ -113,6 +126,11 @@ const textToValue = {
     'chinn': 'ချင်း',
     'chin': 'ချင်',
     'cha': 'ချ',
+    'khwayy': 'ခွေး',
+    'khway': 'ခွေး',
+    'kwayy': 'ခွေ',
+    'kway': 'ခွေ',
+    'chway': 'ချွေး',
 
     'twr': 'သွား',
 
@@ -122,6 +140,8 @@ const textToValue = {
     'thr': 'သာ',
     'tharr': 'သား',
     'thar': 'သာ',
+    'thu': 'သူ',
+    'thamee': 'သမီး',
     
     'twyy': 'တွေး',
     'twy': 'တွေ',
@@ -133,7 +153,8 @@ const textToValue = {
     'tl': 'တယ်',
     'dl': 'တယ်',
     'tot': 'တော့',
-    'dr': 'ဒါ',
+    'taung': 'တောင်',
+    'tan': 'တန်',
 
     'hr': 'ဟာ',
 
@@ -197,6 +218,7 @@ const textToValue = {
     'la': 'လ',
     'pa': 'ပ',
     'ta': 'သ',
+    'dr': 'ဒါ',
     'di': 'ဒီ',
     
     'p': 'ပီ',
