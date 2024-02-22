@@ -7,13 +7,13 @@ function showOutput() {
     words.forEach(word => {
         let matchFound = false;
         if (word.length < 10) {
-        for (const key in textToValue) {
+        for (const key in mappings) {
             if (word === key) { // Exact match
-                output += textToValue[key] + ' ';
+                output += mappings[key] + ' ';
                 matchFound = true;
                 break;
             } else if (word.includes(key)) { // Substring match
-                output += textToValue[key] + ' ';
+                output += mappings[key] + ' ';
                 matchFound = true;
                 break;
             }
