@@ -81,6 +81,7 @@ const mappings = {
     'lr': 'လာ',
     'larr': 'လား',
     'lar': 'လာ',
+    'lat': 'လက်',
     'lol': 'လို',
     'loe': 'လိုး',
     'luuu': 'လူး',
@@ -144,6 +145,7 @@ const mappings = {
     'yone': 'ရုံ',
 
     'pyat': 'ပျက်',
+    'pyan': 'ပြန်',
     'pyt': 'ပျက်',
     'pyrr': 'ပျား',
     'prr': 'ပါး',

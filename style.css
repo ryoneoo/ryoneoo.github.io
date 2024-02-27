@@ -82,7 +82,7 @@ table {
     position: fixed;
     top: 0;
     left: 0;
-    width: 55vw;
+    width: calc(50% + 100px);
     height: 100vh;
     background: 0;
     z-index: 200;
@@ -99,7 +99,7 @@ table {
     height: 0vh;
     font-size: 450%;
     left: 1%;
-    transition: line-height ease 1000ms, width ease 1650ms, font-size ease 500ms;
+    transition: line-height ease 1000ms, width ease 1650ms, font-size ease 1400ms;
 }
 
 @keyframes fadeIn{
