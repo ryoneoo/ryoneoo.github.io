@@ -13,7 +13,6 @@ const mappings = {
     'kyr': 'ကြာ',
     'kyarr': 'ကျား',
     'kyar': 'ကြာ',
-    'kya': 'ကြ',
     'kwr': 'ကွာ',
     'kyi': 'ကြည့်',
     'kaungg': 'ကောင်း',
@@ -33,7 +32,8 @@ const mappings = {
     'kar': 'ကား',
     'car': 'ကား',
     'gyi': 'ကြီး',
-
+    'kya': 'ကြ',
+    
     'minn': 'မင်း',
     'min': 'မင်',
     'myr': 'များ',
