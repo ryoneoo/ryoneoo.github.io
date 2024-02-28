@@ -25,6 +25,7 @@ const mappings = {
     'kyae': 'ကျယ်',
     'kyal': 'ကျယ်',
     'kyat': 'ကျပ်',
+    'kyann': 'ကြမ်း',
     'kyan': 'ကျန်',
     'kyaung': 'ကြောင်',
     'kyaunt': 'ကြောက်',
@@ -124,7 +125,6 @@ const mappings = {
     'yay': 'ရေ',
     'shinn': 'ရှင်း',
     'shin': 'ရှင်',
-    'yan': 'ရမ်း',
     'yarr': 'ရား',
     'yar': 'ရာ',
     'sharr': 'ရှား',
@@ -267,6 +267,7 @@ const mappings = {
     'wayy': 'ဝေး',
     'way': 'ဝေ',
 
+    'yan': 'ရမ်း',
     'ka':'က',
     'ko': 'ကို',
     'ga': 'ဂ',
