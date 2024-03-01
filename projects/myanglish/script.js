@@ -48,3 +48,20 @@ if (darkMode) {
       localStorage.removeItem("dark-mode");
     }
   });
+
+  function mainPage() {
+    splash.classList.remove('displayNone')
+    loadText.classList.remove('splashDelete')
+    loadText.classList.remove('splashHide')
+    loadText.classList.remove('projects')
+    loadText.classList.add('myanglish')
+    loadText.innerText = "myanglish"
+  
+    setTimeout(()=>{
+      loadText.classList.add('splashHide')
+    }, 1000);
+    setTimeout(()=>{
+      window.location.href = "/";
+    }, 1800);
+  }
+  

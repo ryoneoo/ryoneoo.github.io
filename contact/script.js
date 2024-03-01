@@ -1,20 +1,18 @@
 // Loading welcome screen script
 const splash = document.querySelector('.splashScreen');
-const ryo = document.querySelector('.ryo')
-const ryo2 = document.getElementsByClassName(".ryo")
+const loadText = document.querySelector('.loadText')
 const pageHeading = document.querySelector('.pageHeading')
 
-// Loading Splashscreen
 document.addEventListener('DOMContentLoaded', (e)=>{
     setTimeout(()=>{
         splash.classList.add('displayNone')
-    }, 2000);
+    }, 1200);
     setTimeout(()=>{
-        ryo.classList.add('moveLeft')
-    }, 1800);
+      loadText.classList.add('splashHide')
+  }, 1200);
     setTimeout(()=>{
-        pageHeading.classList.add('topFixed')
-    }, 1800);
+      loadText.classList.add('splashDelete')
+  }, 2200);
 })
 
 function navigationResponse() {
@@ -51,6 +49,19 @@ if (darkMode) {
     }
   });
 
+  function myanglishPage() {
+    splash.classList.remove('displayNone')
+    loadText.classList.remove('splashDelete')
+    loadText.classList.remove('splashHide')
+    loadText.classList.remove('projects')
+    loadText.classList.add('myanglish')
+    loadText.innerText = "myanglish"
+
+    setTimeout(()=>{
+      window.location.href = "/projects/myanglish/";
+    }, 1100);
+}
+
 function mainPage() {
   splash.classList.remove('displayNone')
   loadText.classList.remove('splashDelete')
@@ -60,42 +71,9 @@ function mainPage() {
   loadText.innerText = "myanglish"
 
   setTimeout(()=>{
-    window.location.href = "/projects/myanglish/";
-  }, 1100);
-}
-
-function projectsPage() {
-    splash.classList.remove('displayNone')
-    ryo.classList.remove('moveLeft')
-
-    setTimeout(()=>{
-      ryo.classList.add('splashHide')
-    }, 1000);
-    setTimeout(()=>{
-      window.location.href = "/projects/";
-    },1800);
-}
-
-function aboutPage() {
-    splash.classList.remove('displayNone')
-    ryo.classList.remove('moveLeft')
-
-    setTimeout(()=>{
-      ryo.classList.add('splashHide')
-    }, 1000);
-    setTimeout(()=>{
-      window.location.href = "/about/";
-    }, 1800);
-}
-
-function contactPage() {
-    splash.classList.remove('displayNone')
-    ryo.classList.remove('moveLeft')
-
-    setTimeout(()=>{
-      ryo.classList.add('splashHide')
-    }, 1000);
-    setTimeout(()=>{
-      window.location.href = "/contact/";
-    }, 1800);
+    loadText.classList.add('splashHide')
+  }, 1000);
+  setTimeout(()=>{
+    window.location.href = "/";
+  }, 1800);
 }
