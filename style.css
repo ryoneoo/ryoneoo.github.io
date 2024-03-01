@@ -5,6 +5,11 @@ body {
     width: 100vw;
     margin-top: 0;
     margin-left: 0;
+    transition: all ease 650ms;
+
+}
+
+.center {
     text-align: center;
 }
 
@@ -18,6 +23,19 @@ table {
 
 /* Root variables*/
 :root {
+    --tone1:#000712;
+    --tone2:#001234;
+    --tone3:#20304d;
+    --tone4:#404d67;
+    --tone5:#606b80;
+    --tone6:#80899a;
+    --tone7:#9fa6b3;
+    --tone8:#bfc4cc;
+    --tone9:#dfe1e6;
+}
+
+/* Darkmode */
+.dark-theme {
     --tone9:#000712;
     --tone8:#001234;
     --tone7:#20304d;
@@ -102,6 +120,39 @@ table {
     transition: line-height ease 1000ms, width ease 1650ms, font-size ease 1400ms;
 }
 
+.loadText {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: 0;
+    z-index: 200;
+    color: var(--tone1);
+    text-align: right;
+    line-height: 90vh;
+    opacity: 100%;
+}
+
+.projects {
+    width: calc(50% + 180px);
+    font-size: 600%;
+}
+
+.myanglish {
+    width: calc(50% + 155px);
+    font-size: 400%;
+}
+
+.splashHide {
+    color: transparent;
+    transition: color ease 1s;
+}
+
+.splashDelete {
+    display: none;
+    transition: display ease 700ms;
+}
+
 @keyframes fadeIn{
     to{
         opacity: 1;
@@ -156,14 +207,15 @@ li a.active {
 
 /* Home page */
 .pageHeading {
-    margin-bottom: 100px;
+    text-align: center;
     color: var(--tone1);
 }
 
 .pages {
     --pagesHeight: 250px;
+    text-align: center;
     color: var(--tone1);
-    width: 55%;
+    width: 45%;
     height: var(--pagesHeight);
     line-height: var(--pagesHeight);
     background: var(--tone7);
@@ -173,13 +225,20 @@ li a.active {
     border: var(--tone3) solid 2px;
     box-shadow: 0 0 5px 1px var(--tone5);
     border-radius: 10px;
-    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    transition: width 400ms ease-in-out,
+                transform 350ms ease-in-out,
+                box-shadow 350ms ease-in-out,
+                border 350ms ease-in-out,
+                font-size 350ms ease-in-out,
+                font-weight 350ms ease-in-out,
+                opacity 350ms ease-in-out;
     margin-bottom: 50px;
 }
 
 .pages:hover {
-    cursor: pointer;
-    transform: scale(103%);
+    width: 50%;
+    transform: scale(102%);
     box-shadow: 0 0 20px 2px var(--tone2);
     border: var(--tone1) solid 2px;
     font-size: large;
@@ -187,10 +246,7 @@ li a.active {
     opacity: 90%;
 }
 
-
-
-
-
+/* Navigation Bar */
 .nav {
     overflow: hidden;
     background-color: #333;
@@ -240,4 +296,47 @@ li a.active {
       display: block;
       text-align: left;
     }
+}
+
+/* Darkmode/Lightmode toggle */
+
+.toggle-container {
+    text-align: right;
+    margin-right: 1%;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+
+.toggle {
+    --size: 2rem;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+    border-radius: 999px;
+    color: #e6e6ff;
+    transition: all 500ms;
+}
+.toggle:checked {
+    --ray-size: calc(var(--size) * -0.4);
+    --offset-orthogonal: calc(var(--size) * 0.65);
+    --offset-diagonal: calc(var(--size) * 0.45);
+    transform: scale(0.75);
+    color: #fa0;
+    box-shadow: inset 0 0 0 var(--size), calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size), var(--offset-orthogonal) 0 0 var(--ray-size), 0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size), 0 var(--offset-orthogonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size), var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size), var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
+}
+.toggle {
+    z-index: 1;
+}
+.toggle:checked ~ .background {
+    --bg: white;
+}
+.toggle:checked ~ .title {
+    --color: #fa0;
+}
+
+.heading {
+    color: var(--tone1);
 }

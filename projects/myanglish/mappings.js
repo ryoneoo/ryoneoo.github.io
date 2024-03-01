@@ -125,8 +125,6 @@ const mappings = {
     'yay': 'ရေ',
     'shinn': 'ရှင်း',
     'shin': 'ရှင်',
-    'yarr': 'ရား',
-    'yar': 'ရာ',
     'sharr': 'ရှား',
     'shar': 'ရှာ',
     'yrr': 'ရား',
@@ -267,6 +265,8 @@ const mappings = {
     'wayy': 'ဝေး',
     'way': 'ဝေ',
 
+    'yarr': 'ရား',
+    'yar': 'ရာ',
     'yan': 'ရမ်း',
     'ka':'က',
     'ko': 'ကို',

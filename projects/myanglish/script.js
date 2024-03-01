@@ -1,19 +1,18 @@
 // Loading welcome screen script
 const splash = document.querySelector('.splashScreen');
-const ryo = document.querySelector('.ryo')
+const loadText = document.querySelector('.loadText')
 const pageHeading = document.querySelector('.pageHeading')
 
-// Loading Splashscreen
 document.addEventListener('DOMContentLoaded', (e)=>{
     setTimeout(()=>{
         splash.classList.add('displayNone')
-    }, 2000);
+    }, 1200);
     setTimeout(()=>{
-        ryo.classList.add('moveLeft')
-    }, 1800);
+      loadText.classList.add('splashHide')
+  }, 1200);
     setTimeout(()=>{
-        pageHeading.classList.add('topFixed')
-    }, 1800);
+      loadText.classList.add('splashDelete')
+  }, 2200);
 })
 
 function navigationResponse() {
