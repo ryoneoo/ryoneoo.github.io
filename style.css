@@ -85,6 +85,7 @@ table {
     color: var(--tone1);
     text-align: right;
     line-height: 90vh;
+    transition: all ease 1s;
 }
 
 .splashScreen.displayNone {
@@ -108,6 +109,7 @@ table {
     text-align: right;
     line-height: 90vh;
     font-size: 800%;
+    transition: line-height ease 900ms, width ease 850ms, font-size ease 800ms;
 }
 
 .ryo.moveLeft {
@@ -131,6 +133,11 @@ table {
     text-align: right;
     line-height: 90vh;
     opacity: 100%;
+}
+
+.about {
+    width: calc(50% + 150px);
+    font-size: 700%;
 }
 
 .projects {
@@ -209,6 +216,7 @@ li a.active {
 .pageHeading {
     text-align: center;
     color: var(--tone1);
+    cursor: pointer;
 }
 
 .pages {
@@ -339,4 +347,9 @@ li a.active {
 
 .heading {
     color: var(--tone1);
+}
+
+.socials {
+    color: var(--tone1);
+    text-decoration: none;
 }
