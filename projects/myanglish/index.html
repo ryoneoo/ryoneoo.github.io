@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ryo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    input[type="text"],
+    #output {
+        padding: 15px;
+        width: 300px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: white;
+    }
+    #output {
+        margin-left: 10px;
+    }
+    .container2 {
+        transform: scale(130%);
+        margin-top: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="splashScreen">
+    </div>
+    
+    <div class="container">
+        <a href="">
+            <div class="fadeIn loadText myanglish">
+                myanglish
+            </div>
+        </a>    
+    </div>
+
+    <a href="/index.html">
+        <h2 class="pageHeading">ryo</h2>
+    </a>
+    <div class="toggle-container">
+        <input id="toggle" class="toggle" type="checkbox">
+    </div>
+    
+    <div class="center">
+        <div class="container2">
+            <div class="heading">
+                Myanglish to Burmese Translator (beta)
+            </div>
+            <br>
+            <input type="text" id="textInput" oninput="showOutput()">
+            <span id="output"></span>
+        </div>
+    </div>
+
+    <script src="mappings.js"></script>
+    <script src="translate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
